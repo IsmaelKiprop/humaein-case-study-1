@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "generated_at": "2025-08-24T13:42:18.774657",
+    "total_claims_processed": 8,
+    "eligible_claims_count": 4,
+    "eligibility_rate": 0.5
+  },
+  "resubmission_candidates": [
+    {
+      "claim_id": "A123",
+      "patient_id": "P001",
+      "procedure_code": "99213",
+      "denial_reason": "Missing modifier",
+      "submitted_at": "2025-07-01T00:00:00",
+      "source": "emr_alpha",
+      "eligibility_score": 0.84,
+      "business_rule_flags": [
+        "Retryable reason: Missing modifier"
+      ]
+    },
+    {
+      "claim_id": "A124",
+      "patient_id": "P002",
+      "procedure_code": "99214",
+      "denial_reason": "Incorrect NPI",
+      "submitted_at": "2025-07-10T00:00:00",
+      "source": "emr_alpha",
+      "eligibility_score": 0.84,
+      "business_rule_flags": [
+        "Retryable reason: Incorrect NPI"
+      ]
+    },
+    {
+      "claim_id": "A127",
+      "patient_id": "P004",
+      "procedure_code": "99401",
+      "denial_reason": "Prior auth required",
+      "submitted_at": "2025-07-20T00:00:00",
+      "source": "emr_alpha",
+      "eligibility_score": 0.84,
+      "business_rule_flags": [
+        "Retryable reason: Prior auth required"
+      ]
+    },
+    {
+      "claim_id": "B988",
+      "patient_id": "P011",
+      "procedure_code": "99214",
+      "denial_reason": "Missing modifier",
+      "submitted_at": "2025-07-09T00:00:00",
+      "source": "emr_beta",
+      "eligibility_score": 0.84,
+      "business_rule_flags": [
+        "Retryable reason: Missing modifier"
+      ]
+    }
+  ]
+}

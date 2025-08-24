@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "generated_at": "2025-08-24T13:42:18.777538",
+    "total_claims_processed": 8,
+    "rejected_claims_count": 4,
+    "rejection_rate": 0.5
+  },
+  "rejection_summary": {
+    "Missing patient ID": 1,
+    "Non-retryable reason: Authorization expired": 1,
+    "Claim not denied": 2,
+    "No denial reason provided": 2,
+    "Non-retryable reason: Incorrect provider type": 1
+  },
+  "rejected_claims_by_reason": {
+    "Missing patient ID": [
+      {
+        "claim_id": "A125",
+        "patient_id": null,
+        "procedure_code": "99215",
+        "denial_reason": "Authorization expired",
+        "submitted_at": "2025-07-05T00:00:00",
+        "source": "emr_alpha",
+        "status": "denied"
+      }
+    ],
+    "Non-retryable reason: Authorization expired": [
+      {
+        "claim_id": "A125",
+        "patient_id": null,
+        "procedure_code": "99215",
+        "denial_reason": "Authorization expired",
+        "submitted_at": "2025-07-05T00:00:00",
+        "source": "emr_alpha",
+        "status": "denied"
+      }
+    ],
+    "Claim not denied": [
+      {
+        "claim_id": "A126",
+        "patient_id": "P003",
+        "procedure_code": "99381",
+        "denial_reason": "None",
+        "submitted_at": "2025-07-15T00:00:00",
+        "source": "emr_alpha",
+        "status": "approved"
+      },
+      {
+        "claim_id": "B989",
+        "patient_id": "P012",
+        "procedure_code": "99215",
+        "denial_reason": null,
+        "submitted_at": "2025-07-10T00:00:00",
+        "source": "emr_beta",
+        "status": "approved"
+      }
+    ],
+    "No denial reason provided": [
+      {
+        "claim_id": "A126",
+        "patient_id": "P003",
+        "procedure_code": "99381",
+        "denial_reason": "None",
+        "submitted_at": "2025-07-15T00:00:00",
+        "source": "emr_alpha",
+        "status": "approved"
+      },
+      {
+        "claim_id": "B989",
+        "patient_id": "P012",
+        "procedure_code": "99215",
+        "denial_reason": null,
+        "submitted_at": "2025-07-10T00:00:00",
+        "source": "emr_beta",
+        "status": "approved"
+      }
+    ],
+    "Non-retryable reason: Incorrect provider type": [
+      {
+        "claim_id": "B987",
+        "patient_id": "P010",
+        "procedure_code": "99213",
+        "denial_reason": "Incorrect provider type",
+        "submitted_at": "2025-07-03T00:00:00",
+        "source": "emr_beta",
+        "status": "denied"
+      }
+    ]
+  }
+}
