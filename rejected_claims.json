@@ -1,16 +1,17 @@
 {
   "metadata": {
-    "generated_at": "2025-08-24T13:42:18.777538",
-    "total_claims_processed": 8,
-    "rejected_claims_count": 4,
-    "rejection_rate": 0.5
+    "generated_at": "2025-08-24T14:10:13.919580",
+    "total_claims_processed": 9,
+    "rejected_claims_count": 5,
+    "rejection_rate": 0.5555555555555556
   },
   "rejection_summary": {
-    "Missing patient ID": 1,
+    "Missing patient ID": 2,
     "Non-retryable reason: Authorization expired": 1,
     "Claim not denied": 2,
     "No denial reason provided": 2,
-    "Non-retryable reason: Incorrect provider type": 1
+    "Non-retryable reason: Incorrect provider type": 1,
+    "LLM classified: Incorrect procedure - not retryable": 1
   },
   "rejected_claims_by_reason": {
     "Missing patient ID": [
@@ -21,6 +22,15 @@
         "denial_reason": "Authorization expired",
         "submitted_at": "2025-07-05T00:00:00",
         "source": "emr_alpha",
+        "status": "denied"
+      },
+      {
+        "claim_id": "B990",
+        "patient_id": null,
+        "procedure_code": "99401",
+        "denial_reason": "incorrect procedure",
+        "submitted_at": "2025-07-01T00:00:00",
+        "source": "emr_beta",
         "status": "denied"
       }
     ],
@@ -82,6 +92,17 @@
         "procedure_code": "99213",
         "denial_reason": "Incorrect provider type",
         "submitted_at": "2025-07-03T00:00:00",
+        "source": "emr_beta",
+        "status": "denied"
+      }
+    ],
+    "LLM classified: Incorrect procedure - not retryable": [
+      {
+        "claim_id": "B990",
+        "patient_id": null,
+        "procedure_code": "99401",
+        "denial_reason": "incorrect procedure",
+        "submitted_at": "2025-07-01T00:00:00",
         "source": "emr_beta",
         "status": "denied"
       }

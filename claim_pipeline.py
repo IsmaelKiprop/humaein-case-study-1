@@ -371,7 +371,8 @@ class DataIngestionPipeline:
                 try:
                     # Extract and validate data
                     claim_id = item.get('id', '').strip()
-                    patient_id = item.get('member', '').strip() or None
+                    patient_id_raw = item.get('member')
+                    patient_id = patient_id_raw.strip() if patient_id_raw is not None else None
                     procedure_code = item.get('code', '').strip()
                     denial_reason = item.get('error_msg')
                     if denial_reason is not None:
